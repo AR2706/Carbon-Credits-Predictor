@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-scikit-learn
+scikit-learn==1.6.1
 pandas
 numpy
 # ... plus any other libraries your model needs
