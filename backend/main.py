@@ -24,7 +24,7 @@ class SolarRequest(BaseModel):
 
 # Load the ML Model
 try:
-    with open("model.pkl", "rb") as f:
+    with open("backend/model.pkl", "rb") as f:
         model = pickle.load(f)
 except Exception as e:
     print(f"Model Error: {e}")
