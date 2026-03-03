@@ -1,0 +1,18 @@
+services:
+  # 1. Your Python Backend (Docker)
+  - type: web
+    name: carbon-credits-api
+    env: docker
+    region: singapore 
+    plan: free
+    branch: main
+
+  # 2. Your React Frontend (Static Site)
+  - type: static_site
+    name: carbon-credits-ui
+    region: singapore
+    plan: free
+    branch: main
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
